@@ -1,0 +1,16 @@
+{% load static %}
+<html>
+<head>
+    <title>Registrar Vehículo</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'control/styles.css' %}">
+</head>
+<body>
+    <h1>Datos de Vehículo</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+    </form>
+    <a href="{% url 'control:index' %}">Volver al Inicio</a>
+</body>
+</html>

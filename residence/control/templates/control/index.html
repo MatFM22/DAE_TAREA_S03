@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+<head>
+    <title>Condominio</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'control/styles.css' %}">
+</head>
+<body>
+    <h1>Seleccionar</h1>
+    <ul>
+        <li>
+            <a href="{% url 'control:registrar_propietario' %}">Registro de Propietario</a>
+        </li>
+        <li>
+            <a href="{% url 'control:registrar_vehiculo' %}">Registro de Vehículo</a>
+        </li>
+        <li>
+            <a href="{% url 'control:registrar_registro' %}">Registro de Entrada y Salida</a>
+        </li>
+    </ul>
+</body>
+</html>
